@@ -1,0 +1,6 @@
+body{background-color: #2A2C2B; color: rgba(206, 206, 206, 0.79); overflow-x: hidden; min-width: 320px;}
+.gelap{background-color: #374140;}
+.teks-gelap{color: #374140;}
+.terang{color: white;}
+.large-space{padding: 25px;}
+.kartu-wrap{word-wrap: break-word;}
