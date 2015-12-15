@@ -1,5 +1,0 @@
-[client]
-database = nama_database
-user = user_databse
-password = user_password
-default-character-set = utf8
