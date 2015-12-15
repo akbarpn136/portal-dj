@@ -75,6 +75,14 @@ WSGI_APPLICATION = 'portal.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
+'''
+# db.cnf
+[client]
+database = dj_portal
+user = user-portal
+password = 123456
+default-character-set = utf8
+'''
 
 DATABASES = {
     'default': {
@@ -103,4 +111,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+    # '/var/www/static/',
+)
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
