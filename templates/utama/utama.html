@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +9,13 @@
 
     <!-- Site Properities -->
     <title>Portal B2TA3</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="custom.css">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'semantic.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'custom.css' %}">
 
-    <script src="jquery.min.js"></script>
-    <script src="semantic.min.js"></script>
-    <script src="custom.js"></script>
+    <script src="{% static 'jquery.min.js' %}"></script>
+    <script src="{% static 'semantic.min.js' %}"></script>
+    <script src="{% static 'custom.js' %}"></script>
 </head>
 <body>
     <!--Rail-->
@@ -23,7 +24,7 @@
         <div id="menu_samping_komputer">
             <div id="samping_komputer" class="ui inverted left vertical pointing small fixed menu portal no-border-radius" style="height: 100% !important;">
                 <div class="item logo">
-                    <img class="ui image" src="portal.svg">
+                    <img class="ui image" src="{% static 'portal.svg' %}">
                 </div>
 
                 <a href="index.html" class="active item tunjuk">
@@ -54,7 +55,7 @@
         <div id="menu_samping_tablet">
             <div id="samping_tablet" class="ui inverted left vertical fixed pointing compact menu portal no-border-radius" style="height: 100% !important;">
                 <div class="item logo">
-                    <img class="ui mini image" src="portal_favicon.png">
+                    <img class="ui mini image" src="{% static 'portal_favicon.png' %}">
                 </div>
 
                 <a href="index.html" class="active item tunjuk" data-position="right center" data-content="Utama">
@@ -98,7 +99,7 @@
         <div class="four wide column">
             <div class="ui fluid card gelap" style="height: 100%;">
                 <div class="image">
-                    <img src="asset/logo_aerobox">
+                    <img src="{% static 'logo_aerobox' %}">
                 </div>
 
                 <div class="content">
@@ -133,7 +134,7 @@
         <div class="four wide column">
             <div class="ui fluid card gelap" style="height: 100%;">
                 <div class="image">
-                    <img src="asset/logo_gitlab">
+                    <img src="{% static 'logo_gitlab' %}">
                 </div>
 
                 <div class="content">
@@ -168,7 +169,7 @@
         <div class="four wide column">
             <div class="ui fluid card gelap" style="height: 100%;">
                 <div class="image">
-                    <img src="asset/logo_logapp">
+                    <img src="{% static 'logo_logapp' %}">
                 </div>
 
                 <div class="content">
@@ -202,7 +203,7 @@
         <div class="four wide column">
             <div class="ui fluid card gelap" style="height: 100%;">
                 <div class="image">
-                    <img src="asset/logo_simpeg">
+                    <img src="{% static 'logo_simpeg' %}">
                 </div>
 
                 <div class="content">
